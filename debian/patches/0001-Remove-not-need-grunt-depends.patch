@@ -1,0 +1,25 @@
+From 3b344feda78930b9a6c89e1cf8bc044d2a6d19e2 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Fri, 11 May 2018 23:06:18 +0200
+Subject: Remove not need grunt depends
+
+forwarded: no
+---
+ Gruntfile.js | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/Gruntfile.js b/Gruntfile.js
+index 1218a46..ee39bc6 100644
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -53,9 +53,7 @@ module.exports = function(grunt){
+ 
+ 	grunt.loadNpmTasks('grunt-contrib-copy');
+ 	grunt.loadNpmTasks('grunt-contrib-uglify');
+-	grunt.loadNpmTasks('grunt-contrib-watch');
+-	grunt.loadNpmTasks('grunt-bytesize');
+ 
+-	grunt.registerTask('default', ['copy', 'uglify', 'bytesize', 'watch']);
++	grunt.registerTask('default', ['copy', 'uglify']);
+ 
+ };
