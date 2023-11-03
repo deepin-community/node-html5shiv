@@ -1,5 +1,55 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-html5shiv (3.7.3+dfsg-5) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable):
+    + node-html5shiv: Drop versioned constraint on nodejs in Suggests.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 09:25:39 +0000
+
+node-html5shiv (3.7.3+dfsg-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+  * Apply multi-arch hints.
+    + node-html5shiv: Add Multi-Arch: foreign.
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on grunt,
+      node-grunt-contrib-copy, node-grunt-contrib-uglify.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs auto install
+
+ -- Yadd <yadd@debian.org>  Sun, 12 Dec 2021 20:58:10 +0100
+
+node-html5shiv (3.7.3+dfsg-3) unstable; urgency=medium
+
+  * Bump debhelper and compat (no changes)
+  * Move to /usr/share/nodejs
+  * Only suggests: nodejs. This is mainly a javascript lib.
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 16 Sep 2019 00:05:49 +0200
+
+node-html5shiv (3.7.3+dfsg-2) unstable; urgency=medium
+
+  * Source upload
+  * Bump policy
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 11 Dec 2018 17:11:44 +0100
+
+node-html5shiv (3.7.3+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #898452). Will allow one to replace
+    a dozen of copy of this file on the distribution. Better and
+    safer in case of security problem.
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 11 May 2018 22:58:24 +0200
